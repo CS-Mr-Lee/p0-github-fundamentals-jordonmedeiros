@@ -1,0 +1,44 @@
+/*
+Name: Jordon Medeiros
+Program Name: Shapes
+Date: 2021-09-27
+Program discription: This program draws a sqaure
+*/
+
+import java.util.*;
+public class Shapes {
+   public static void main(String[] a)
+   {
+      //Here I declare the turtle and the scanner and the variables
+      Turtle bob = new Turtle();
+      Scanner input = new Scanner(System.in);
+      //Look at https://docs.oracle.com/javase/7/docs/api/java/awt/Color.html for different colours
+      Turtle.bgcolor("lightblue");
+      bob.penColor("red");
+      bob.width(10);
+      int sqaureSide, recLength, recWidth; 
+      
+      //Here I prompt the user for the side length
+      System.out.println("What is the side lenght of the square \n");
+      sqaureSide = input.nextInt();
+      square(bob, sqaureSide);
+   }
+   //Here I create a method to draw the square
+   public static void square(Turtle bob, int squareSide){
+      //Here I draw the square
+      for(int i = 0; i < squareSide; i++){
+         for(int ii = 0; ii < squareSide; ii++){
+            bob.forward(10);
+         }
+         if(i%2 == 0 & i != squareSide -1 ){
+            bob.right(90);
+            bob.forward(10);
+            bob.right(90);
+         }else if(i != squareSide -1){
+            bob.left(90);
+            bob.forward(10);
+            bob.left(90);
+         }
+      }
+   }
+}
