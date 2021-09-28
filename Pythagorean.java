@@ -1,0 +1,43 @@
+/*
+Name: Jordon Medeiros
+Program Name: Pythagorean
+Date: 2021-09-27
+Program discription: This program displays all the pythagorean triples, 
+where the largest number(c) is smaller than or equal to the integer the user inputted.
+*/
+
+
+import java.util.*;
+
+public class PythagoreanTriples
+{
+   public static void main(String[] args)
+   {
+      
+      //Here I created the scanner and the variable
+      Scanner input = new Scanner(System.in);
+      int integer;
+      
+      //Here I tell the user what the program does
+      System.out.println("This program will print all the pythagorean triples where the largest number is smaller or equal to the number you input");
+      
+      //Here I prompt the user for the integer
+      System.out.print("Enter a positive integer: ");
+      integer = input.nextInt();
+      
+      //The outer most loop increases the c value each time until it becomes bigger than the integer the user inputted
+      for(int  c = 1;  c <= integer;  c++){   
+         //The middle loop increases the b value each time the outer loop runs once until the b value becomes one smaller than the c value      
+         for(int b = 2; b < c ; b++){
+            //The middle loop increases the a value each time the middle runs once until the a value becomes one smaller than the b value
+            for(int a = 1; a < b && a < c; a++){
+               //The if statement checks if the values c,b, and a results in a pythagorean triplet 
+               if(a*a + b*b == c*c){
+                  //The print statment prints out the pythagorean triplet.
+                  System.out.println(a + "^2"+ " + " + b + "^2" + " = " + c + "^2");
+               }
+            }
+         }
+      }
+   }
+}

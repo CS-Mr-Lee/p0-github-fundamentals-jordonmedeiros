@@ -1,0 +1,36 @@
+/*
+Name: Jordon Medeiros
+Program Name: array1V1
+Date: 2021-09-27
+Program discription: This program inputs 14 strings from the user and puts them in reverse in the second array
+*/
+
+
+import java.util.*;
+
+public class array1V1{
+   public static void main(String[] args){
+      
+      //Here I create the scanner and arrays
+      Scanner sc = new Scanner(System.in);
+      final int ARRAY_VALUES = 14;
+      String[] firstArray = new String[ARRAY_VALUES];
+      String[] secondArray = new String[ARRAY_VALUES];
+      
+      //Here I for loop to put the user input into the array
+      for(int i = 0; i < ARRAY_VALUES; i++){
+         System.out.print("Enter value #" + (i + 1) + " for the array: ");
+         firstArray[i] = sc.nextLine();
+      }
+      
+      //Here I put the values of the array in reverse to the second array
+      for(int i = 0; i < ARRAY_VALUES; i++){
+         secondArray[i] = firstArray[ARRAY_VALUES-1 - i];   
+      }
+      
+      //Here I output the values of the second array which is the reverse of the first array
+      for(int i = 0; i < ARRAY_VALUES; i++){
+         System.out.println(secondArray[i]);
+      }
+   }
+}
