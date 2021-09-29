@@ -1,0 +1,66 @@
+/*
+Name: Jordon Medeiros
+Program Name: AddPairs
+Date: 2021-09-25
+Program discription: This program inputs a number from the user as a string and outputs the sum of each pair of digits.
+*/
+
+
+import java.util.*;
+
+public class AddPairs
+{
+   public static void main(String[] args)
+   {
+      //In this paragraph, I create the scanner and the variables
+      Scanner input = new Scanner(System.in);
+      String num, letter;
+      int len, digitPair;
+      int sum = 0;
+      double arrayLen;
+      int posInArray = 0;
+      
+      //In this paragraph, I input prompt a number from in the form of a string
+      System.out.println("Enter a number");
+      num = input.nextLine();
+      
+      //In this paragraph, i get the lenght of the string and use a for loop to get each pair of digits and convert them into integers to add to the sum
+      //Here I get the lenght of the string 
+      len = num.length();
+      //here i create a Array to hold the pairs
+      arrayLen= Math.round((double)len/2);
+      int[] storage = new int[(int)arrayLen];
+      
+      
+      //Here I use a for loop to loop through each pair of digits
+      for(int i = 0; i < len; i = i + 2){
+            //This if statment is used if the string has an odd amount of digits so it will not be out of bounds
+            if(i != len-1){
+               //Here I put the pair into a variable
+               letter = num.charAt(i) + "" + num.charAt(i+1);
+            }else{
+               letter = num.charAt(i)+"";
+            }
+            //Here I convert the string into a integer and add it to the sum
+            digitPair = Integer.parseInt(letter);
+            storage[posInArray] = digitPair;
+            sum = sum + digitPair;
+            posInArray++;
+            
+      }
+
+      //Here I print out the sum
+      System.out.print(sum + " (");
+      
+      //Here I use an for loop to output all the values in the array
+      for(int i = 0; i < arrayLen; i++){
+         System.out.print(storage[i]);
+         //If its not the last value of the array it prints "+" but if its the end it prints ")"
+         if(i == arrayLen-1){
+            System.out.print(")");
+         }else{
+            System.out.print(" + ");
+         }
+      }
+   }
+}
