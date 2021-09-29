@@ -1,13 +1,13 @@
 /*
 Name: Jordon Medeiros
-Program Name: array1V2
+Program Name: Array1V2
 Date: 2021-09-27
 Program discription: This program inputs 14 strings from the user and puts them in reverse order in the same array
 */
 
 import java.util.*;
 
-public class array1V2{
+public class Array1V2{
    public static void main(String[] args){
       //Here I create the scanner and the array and the variables
       Scanner sc = new Scanner(System.in);
