@@ -1,6 +1,6 @@
 /*
 Name: Jordon Medeiros
-Program Name: array1V1
+Program Name: Array1V1
 Date: 2021-09-27
 Program discription: This program inputs 14 strings from the user and puts them in reverse in the second array
 */
@@ -8,7 +8,7 @@ Program discription: This program inputs 14 strings from the user and puts them 
 
 import java.util.*;
 
-public class array1V1{
+public class Array1V1{
    public static void main(String[] args){
       
       //Here I create the scanner and arrays
