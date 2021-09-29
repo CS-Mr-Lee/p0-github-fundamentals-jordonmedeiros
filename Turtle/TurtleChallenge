@@ -1,0 +1,62 @@
+/*
+Name: Jordon Medeiros
+Program Name: TurtleChallenge
+Date: 2021-09-27
+Program discription: This program draws a line that goes sideways at 90 degrees and increases its length every time
+*/
+
+import java.util.*;
+public class TurtleChallenge {
+   public static void main(String[] a){
+   
+      //Here I create the object and scanner and variables
+      Turtle bob = new Turtle();
+      Scanner input = new Scanner(System.in);
+      //Look at https://docs.oracle.com/javase/7/docs/api/java/awt/Color.html for different colours
+      Turtle.bgcolor("lightblue");
+      bob.penColor("red");
+      bob.width(1);
+      bob.left(45);
+      
+      //Here I draw the stuff
+      for(int i = 0; i < 10; i++){
+         for(int j = 0; j < 10; j++){
+            bob.forward(1 + (i));
+         }
+         if(i % 2 == 0){
+            bob.right(90);
+         }else{
+            bob.left(90);
+         }
+         
+      } 
+      //System.out.println("What is the side lenght of the square \n");
+      //sqaureSide = input.nextInt();
+      //square(bob, sqaureSide);
+      /*possible codes:
+      bob.forward(distance)
+      bob.backward(distance)
+      bob.left(angle)
+      bob.right(angle)
+      
+      bob.up()
+      bob.down()
+      
+      bob.setDirection(angle)
+      bob.home()
+      bob.hide()
+      bob.show()
+      bob.face(x, y)
+      bob.setPosition(x, y)
+      
+      bob.tilt(angle)
+      bob.width(width)
+      bob.penColor("colour")
+      bob.bgcolor("colour")
+      bob.stamp()
+      bob.dot()
+      bob.dot("colour")
+      bob.dot("colour", dotsize)
+      */
+   }
+}
