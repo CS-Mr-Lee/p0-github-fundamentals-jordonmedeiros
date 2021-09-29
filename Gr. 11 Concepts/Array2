@@ -1,0 +1,104 @@
+/*
+Name: Jordon Medeiros
+Program Name: Array2
+Date: 2021-09-27
+Program discription: This program asks the user for a number of students and the number of tests that each student has done. It then finds the average mark of each student.
+It then finds the highest(s) marks and outputs the students with those marks. It then outputs a list of students with a mark higher than the class average.
+*/
+
+import java.util.*;
+
+public class Array2{
+   public static void main(String[] args){
+   
+      //Here I create the scanner and the variables
+      Scanner sc = new Scanner(System.in);
+      int numOfStudent;
+      int numOfTest;
+      double sum = 0;
+      double highestMark = 0;
+      double averageMark;
+      int ifAllSameMarks = 0;
+      int numOfHighestStudent = 0;
+      
+      //Here I ask the user for the number of students and the number of tests in order to create the arrays
+      System.out.print("Enter the number of students: ");
+      numOfStudent = sc.nextInt();
+      System.out.print("Enter the number of tests: ");
+      numOfTest = sc.nextInt();
+      //Here I create all the arrays
+      int[][] list = new int[numOfStudent][numOfTest];   //This array stores each students grades
+      double[] average = new double[numOfStudent];       //This array stores the average of each student
+      int[] highestStudentList = new int[numOfStudent];  //This array stores the students with the highest averages
+      
+      //Here I get a prompt the user for the marks of the students
+      for(int i = 0; i < numOfStudent; i++){
+         for(int x = 0; x < numOfTest; x++){
+            System.out.printf("Enter the mark for student %d on test %d: ",i + 1,x +1);
+            list[i][x] = sc.nextInt();
+         }
+      }
+      
+      //Here I calculate the average of each student
+      for(int i = 0; i < numOfStudent; i++){
+         for(int x = 0; x < numOfTest; x++){
+            sum = list[i][x] + sum;
+         }
+         average[i] = sum/numOfTest;
+         System.out.printf("the average for student %d is %.2f%s\n",i+1, average[i], "%");
+         sum = 0;
+      }
+      
+      //Here I calculate the highest marks in the class. The highest marks are stored in the array called "highestStudentList"
+      for(int i = 0; i < numOfStudent; i++){
+         //Here I check if the highest mark by comparing each students marks with the averages of the other students
+         if(average[i] > highestMark){
+            highestMark = average[i];
+            //Here I clear the array for the students with the highest mark if a new highest mark is found
+            for(int x = 0; x < numOfStudent; x++){
+               highestStudentList[x] = 0; 
+            }
+            //Here I put the new highest mark into the array at position 0
+            numOfHighestStudent = 1;
+            highestStudentList[0] = i+1;
+         //Here I put the student number in the array for the students with the highest mark if the persons mark is the same as the highest mark
+         }else if(average[i] == highestMark){
+            numOfHighestStudent++;
+            highestStudentList[numOfHighestStudent-1] = i+1;
+         }
+      }
+      
+      //Here I print out the results of the array with the students with the highest mark if there are more than one student with the highest mark
+      if(numOfHighestStudent > 1){
+         System.out.print("The student with the highest averages are:");
+         for(int x = 0; x < numOfStudent; x++){
+            if(highestStudentList[x] != 0){
+               System.out.print(" Student #" + highestStudentList[x]);
+            }
+         }
+      //Here I print out the student with the highest mark if there is only one
+      }else{
+         System.out.print("The student with the highest average is student# " + highestStudentList[0]);
+      }
+      
+      //Here I calculate the average of the class
+      for(int i = 0; i < numOfStudent; i++){
+         sum = average[i] + sum;
+      }
+      averageMark = sum/numOfStudent;
+      
+      //Here I print out the students with a mark higher than the average
+      System.out.println(" ");
+      for(int i = 0; i < numOfStudent; i++){
+         if(average[i] > averageMark){
+            ifAllSameMarks++;
+            System.out.println("Student " + (i+1) + " is above average");
+         }
+      }
+      
+      //Here I tell the user if all the students have the same mark
+      if(ifAllSameMarks == 0){
+            System.out.println("\nAll the students have the same mark");
+      }
+   }
+}
