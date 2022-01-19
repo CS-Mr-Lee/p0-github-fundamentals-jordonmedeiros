@@ -1,0 +1,82 @@
+
+Introduction
+
+Motivation sentence
+Summarize the problem (1-2 sentences)
+Summarize the solution (1-2 sentences)
+Describe the format of the rest of the proposal (sections etc)
+
+We are tasked with the job of creating a functional calculator with a graphical interface that also supports the graphing of basic functions (linear and quadratic). The solution is to bring something clean and quite easy to use. At times calculators might seem overwhelming but our team would like to tackle that issue. We want to put our customers and product buyers in awe with our new developments. The proposal will be followed by our motivation to make the project, a summary of the project, specific project details, and finally a conclusion.
+
+
+What is the history of the program?
+Many other versions of the calculator have been created both physically and on the computer. Desmos is a revolutionary calculator that offers both scientific and graphing functions.
+
+Why is this problem interesting?
+This problem is interesting because it requires the programmers to have a solid understanding in both mathematics as well as programming. Calculators may also be hard to use or understand so we want to provide the user an easier time with our calculator. 
+
+When and why does the problem occur?
+The problem occurs when an individual has to solve complicated math calculations. It occurs because the human brain is unable to easily solve as efficiently and as fast as a computer/calculator.
+
+Is the problem already solved? What is done now?
+Thankfully the problem has already been solved, new advancements to calculators are being implemented to further help the usability and functionality of a calculator. Another improvement is improving the physical calculator itself. Many calculators now are lighter and feature longer battery lives.
+
+Are there any similar systems or solutions to the one you propose? Briefly explain them
+Yes there are many similar systems to the solution we proposed. There are many other calculators online that are simple and efficient to use. For example, the google calculator is simple to use, while being very quick and efficient at the same time. Demos is also an example of a calculator that does not require the user to spend large amounts of time to find out how to use it, which possesses a large variety of abilities and functions at the same time.
+
+Are there possible improvements to current solutions?
+Possible improvements to the current solutions I listed above are improving the graphical user interface, making it easier for the user to use the calculator, and most importantly, combining a graphical and non-graphical calculator together, while maintaining the simplicity of the GUI. For example, we could improve on the default google calculator by making the GUI look more pretty, as well as allowing the user to graph simple graphs. We can improve on the 
+
+Project Summary
+
+What in general will this project achieve?
+In general this project will be able to help users solve mathematical calculations quicker and efficiently. While also providing the user with an easy to use interface. 
+
+How will this program fill the gaps/solve the problem?
+While past programs have already solved the problem of having to do mathematical calculations, we wanted to provide users with one that is easy to manage and use. So our solution is to provide a calculator with a simple layout. The GUI will also be more user-friendly as it will not have any complex symbols that people will not understand and we will ensure that the calculator would not require a manual to learn how to use. The GUI will also be more appealing to the eye by reducing clutter and making the spacing of the buttons wider. While calculators are not meant to be used as a source of entertainment. We would like to provide a calculator that is not only easy to use but entertains the audience, especially targeting the audience group of younger individuals.
+
+Project Details pt1 – Architecture & Environment
+
+Describe structure of the program
+The structure of our calculator will be quite simple. The classes of our calculator will consist of but not limited to the main class, classes for the buttons, class for the calculator’s output, and classes for arithmetic calculations. There will also be different types of relationships between our classes. The most common being the inheritance relationship.
+
+Describe hardware, software, and tools used
+I don’t believe we will be working with hardware tools except for the computer which has to run the actual program for our calculator. As for software, we will be using Jgrasp and Java to write our calculator. For tools, we will also be using JFrame to help us create the graphical interface of our calculator. 
+
+Project Details pt2 – Implementation Issues and Challenges
+
+What will be the most difficult issues and challenges of building this program?
+The most difficult issues and challenges of building this program will be making sure the code is well organized so that we would be able to continuously build on top of the code. We will also have to ensure that the code will be able to follow the structure laid out on our UML diagram so that the different classes will be able to work together as efficiently as possible. We also plan on following the agile development process, so we will have to always be able to change parts of our code if necessary. 
+
+How are you using/extending your current tools for your problem?
+(Explain what you use and what you learned)(GUI)(JFRAME)
+For our project, we will have to create a graphical user interface. This requires both of us to be capable of using JFrame to some extent. JFrame will provide us with the ability to create decorations such as a border, a title, and support button components that close or iconify the window. We will also need a good amount of knowledge on how to use the Math. function as a lot of calculations are dependent on these functions. 
+
+What makes your project unique?
+Our project is unique because our main focus on the calculator is to make it simpler rather than more complicated. Unlike many other calculators, our calculator would not require any learning to use and will be very beginner-friendly. In contrast to many other calculators people see, ours will not be intimidating at all and will be visibly appealing to the eye, due to its lack of clutter and clean GUI. 
+
+Project Details pt3 – Deliverables
+
+What will the result be? What can be expected to be given at the end of the project?
+The result will be a simple-to-use calculator made from java GUI. The calculator will be able to perform all the basic arithmetic operations such as addition, subtraction, multiplication, and division. The calculator will also be able to follow the BEDMAS rules. Another addition to our calculator is that it will be to make basic graphs using linear equations. Coinciding that the main focus of our project will be to make a user-friendly and visually appealing calculator, we will prioritize the design and implementation of the GUI rather than the functionality of the calculator. The end result will essentially be a calculator, created with java with java GUI, with all the basic functions of a calculator and can graph basic linear functions.
+
+ Describe in relative detail the features of each of the project’s products
+There will be many features that will make this project successful in achieving its goal of making calculators simpler and easier to use. One notable feature that will help make the calculator seem welcoming to use is its large and welcoming buttons that display the symbols in a clear and orderly manner. Another important feather that will help showcase the calculator’s simplicity is the large and clean display of numbers and symbols on its screen. The calculator will also boast the ability to graph simple linear functions as well as perform simple calculations. A feature that will help us achieve our goal of making the calculator appeal to children without math knowledge is by adding fun facts and colors to the calculator. This will make the calculator less intimidating and more friendly to children, unlike other calculators such as desmos, which scare kids away with its intimidating appearance. 
+
+Emphasize what your project contributes/achieves!
+What our project hopes to accomplish is providing a simple and visually appealing calculator that would not intimidate people without prior knowledge of the calculator's functions. Our calculator will be simple to use because the buttons will be large and clear, there will be less clutter and unnecessary objects, and the display will be simple to read and understand. The calculator will also be visually appealing and less intimidating for kids because the calculator will be colorful and the display will be very clear and easy to see. The calculator will also provide fun facts and jokes to make it more interesting to use. Hopefully, our calculator will achieve its goal by allowing anyone to be able to use the calculator without being intimidated by all the buttons. 
+
+Project Details pt4 – Timeline
+Provide an estimated timeline of project deliverables and important dates
+Obviously, we want to provide the best of our product to our customers, however, due to time constraints that might not be 100% possible. For the first sprint of our project which is due on Monday the 16th, we would like to have the basic functionalities of the calculator to be working. Basic functionalities include adding, subtracting, multiplying, and dividing two numbers. For our 2nd sprint on Friday the 21st, we will try to aim for a calculator with our functions that make the calculator more entertaining and easier to use. This is our estimated timeline for the deliverables of our project.
+
+Conclusion
+
+Summarize problem, motivation, and proposed solution
+Restate importance of this project
+
+The problem our project is trying to solve is the unnecessary complexity and intimidation of most calculators out there. For too long, calculators have focused on their complexity and quantity of features, rather than being simple and visually appealing. These calculators come off as being unnecessarily complex and cluttered, making it intimidating to people who are not familiar with math. We are motivated to change this because I have been a victim of being scared by math, partially due to the necessary intimation of calculators. Our proposed solution is to introduce a calculator that is simple and easy to use, while being able to perform basic arithmetic. Our calculator will be visually appealing and fun to use, which will help people who are intimidated by calculators to do math. This project is very important because it will provide a calculator that anyone of any age or math level can use without fear.
+
+
+
+
