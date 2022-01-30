@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10-Jan-2022, 11:19:39 PM
+    Author     : jordon and ryan
+*/
+/*Here I set the backround color of the root, whcih is the defult name for the entire GUI*/
+.root{
+    
+    -fx-background-color: #383838;
+    -fx-font-size:14pt;
+    -fx-text-fill: black;
+    
+}
+/*Here I set the font size of the display feild*/
+.text-field{
+    -fx-font-size: 24pt; 
+}
+/*Here I set the backround of the buttons*/
+.button{
+    -fx-background-color: #E8E8E8;
+}
+/*I created the name of these two containers and linked them to their respective parts*/
+/*Here I set the backround color and text color of the blue buttons*/
+.button-blue{
+    -fx-background-color: #7CAFC2;
+    -fx-text-fill: #F8F8F8;
+}
+/*Here I set the backround color and text color of the orange buttons*/
+.button-orange{
+    -fx-background-color: orange;
+    -fx-text-fill: #F8F8F8;
+}
